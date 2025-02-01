@@ -1,0 +1,71 @@
+/* ExamForm.css */
+
+.exam-form-container {
+    background-color: #f8f9fa; /* Light background for better contrast */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-header {
+    font-size: 2rem;
+    color: #34495e; /* Dark color for the header */
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .exam-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Space between form elements */
+  }
+  
+  .form-label {
+    font-weight: 600;
+    color: #2c3e50; /* Dark text for labels */
+  }
+  
+  .form-input {
+    padding: 10px;
+    border: 1px solid #bdc3c7; /* Light border */
+    border-radius: 5px;
+    transition: border-color 0.3s;
+  }
+  
+  .form-input:focus {
+    border-color: #e74c3c; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  .ipfs-hash-info {
+    font-size: 0.9rem;
+    color: #7f8c8d; /* Gray color for IPFS hash information */
+  }
+  
+  .submit-button {
+    background-color: #e74c3c; /* Primary button color */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #c0392b; /* Darker shade on hover */
+  }
+  
+  .exam-details {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid #bdc3c7; /* Light border for details section */
+    border-radius: 5px;
+    background-color: #fff; /* White background for exam details */
+  }
+  
+  .details-header {
+    font-size: 1.5rem;
+    color: #34495e; /* Header color for details */
+  }
+  

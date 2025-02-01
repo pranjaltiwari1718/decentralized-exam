@@ -1,0 +1,109 @@
+/* Dashboard.css */
+
+:root {
+    --primary-blue: #4a90e2;
+    --secondary-blue: #2c3e50;
+    --background-light: #f4f6f8;
+    --card-bg: #ffffff;
+    --text-dark: #333;
+    --border-radius: 12px;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-light);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dashboard-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .dashboard-header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-blue);
+    margin-bottom: 2rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+    width: 100%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-header {
+    font-size: 1.8rem;
+    color: var(--primary-blue);
+    font-weight: 600;
+    border-bottom: 2px solid var(--secondary-blue);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card-content {
+    margin-top: 1rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+  }
+  
+  .upload-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .upload-button {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+  }
+  
+  .upload-button:hover {
+    background-color: #357ab8;
+  }
+  
+  .success-message {
+    margin-top: 10px;
+    color: #4caf50; /* Green for success */
+    font-weight: bold;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .dashboard-header {
+      font-size: 2rem;
+    }
+  
+    .card {
+      padding: 1rem;
+    }
+  
+    .card-header {
+      font-size: 1.5rem;
+    }
+  }
+  

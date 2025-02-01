@@ -1,0 +1,82 @@
+/* RoleSelection.css */
+:root {
+    --primary-blue: #4a90e2;
+    --primary-green: #38a169;
+    --background-light: #f9fafb;
+    --text-dark: #333;
+    --text-light: #f7fafc;
+    --hover-blue: #357ABD;
+    --hover-green: #2F855A;
+    --font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    background-color: var(--background-light);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .role-selection-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  }
+  
+  .role-title {
+    font-size: 2.5rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .role-description {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    margin-top: 1rem;
+  }
+  
+  .role-buttons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+  
+  .role-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .role-button--student {
+    background-color: var(--primary-blue);
+    color: var(--text-light);
+  }
+  
+  .role-button--student:hover {
+    background-color: var(--hover-blue);
+    transform: scale(1.05);
+  }
+  
+  .role-button--teacher {
+    background-color: var(--primary-green);
+    color: var(--text-light);
+  }
+  
+  .role-button--teacher:hover {
+    background-color: var(--hover-green);
+    transform: scale(1.05);
+  }
+  
